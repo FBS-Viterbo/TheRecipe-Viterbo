@@ -1,0 +1,13 @@
+@use "../abstract/" as *;
+
+.header {
+  padding: 1rem 0;
+  &__wrapper {
+    @include between;
+  }
+  &__nav {
+    ul {
+      @include centerFlexH(1rem);
+    }
+  }
+}

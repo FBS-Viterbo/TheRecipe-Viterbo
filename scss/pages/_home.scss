@@ -1,0 +1,191 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.banner {
+  background-color: $clr--secondary;
+  &__wrapper {
+    @include gridCustom(1fr 1fr, 1rem);
+    padding: 5rem 0;
+  }
+  &__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    small {
+      color: $clr--primary;
+    }
+    p {
+      max-width: 38rem;
+    }
+    h3 {
+      margin: 2rem 0;
+      inline-size: 35rem;
+    }
+    .btn {
+      margin-top: 2rem;
+    }
+  }
+}
+
+.recipe {
+  margin-top: 5rem;
+  &__title {
+    h3 {
+      color: $clr--primary;
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 3rem;
+    }
+    h3::before,
+    h3::after {
+      content: "";
+      display: inline-block;
+      height: 2px;
+      background-color: $clr--primary;
+      vertical-align: middle;
+      margin: 0 10px;
+    }
+  }
+}
+
+.collection {
+  padding: 4rem 0;
+  &__title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    h3 {
+      font-family: $font-secondary;
+      color: $clr--primary;
+    }
+
+    &::after {
+      content: "";
+      flex: 1;
+      height: 2px;
+      background-color: $clr--primary;
+    }
+  }
+
+  &__wrapper {
+    margin-top: 4rem;
+    @include gridFixed(2, 3rem);
+    align-items: center;
+  }
+
+  &__right {
+    h3 {
+      margin-top: 1rem;
+    }
+    p {
+      margin-top: 1rem;
+      text-align: justify;
+    }
+    a {
+      margin-top: 2rem;
+    }
+  }
+  &__items {
+    .collection__wrapper:nth-child(even) {
+      direction: rtl;
+
+      .collection__right {
+        direction: ltr;
+        text-align: left;
+      }
+    }
+  }
+}
+
+.weekly {
+  background-image: url("../../img/bell_pepper.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: $clr--light;
+  height: 400px;
+  @include centerAll();
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+
+  &__subscribeBox {
+    display: flex;
+    width: 600px;
+    margin: auto;
+    margin-top: 1rem;
+    border-radius: 5px;
+    overflow: hidden;
+    input {
+      flex: 1;
+      padding: 0.75rem 1rem;
+      opacity: 0.85;
+    }
+
+    button {
+      background-color: $clr--primary;
+      color: $clr--light;
+      border: none;
+      padding: 0 2rem;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+  }
+}
+
+.classicCollection {
+  margin: 5rem 0;
+  &__title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+
+    h3 {
+      font-family: $font-secondary;
+      color: $clr--primary;
+    }
+
+    &::after {
+      content: "";
+      flex: 1;
+      height: 2px;
+      background-color: $clr--primary;
+    }
+  }
+  &__cardsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 2rem;
+    .classicCollectionCard {
+      display: flex;
+      gap: 1rem;
+      .title {
+        color: $clr--primary;
+        letter-spacing: 10px;
+      }
+      img {
+        width: 150px;
+        height: 200px;
+      }
+      .info {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: center;
+      }
+      .stars i {
+        color: $clr--primary;
+      }
+    }
+  }
+}

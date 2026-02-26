@@ -1,0 +1,8 @@
+@use "../abstract/" as *;
+.btn {
+  padding: 1rem;
+  background-color: $clr--primary;
+  display: inline-block;
+  color: $clr--light;
+  width: fit-content;
+}

@@ -1,0 +1,13 @@
+@use "../abstract/" as *;
+
+.footer {
+  background-color: $clr--secondary;
+  padding: 3rem 0;
+  text-align: center;
+  &__links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+}

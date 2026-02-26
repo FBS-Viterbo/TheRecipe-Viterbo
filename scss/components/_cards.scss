@@ -1,0 +1,26 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.recipe__cards {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  .card {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    &__title {
+      letter-spacing: 10px;
+      color: $clr--primary;
+      text-align: center;
+    }
+    &__title2 {
+      font-family: $font-secondary;
+      text-align: center;
+    }
+    img {
+      height: 400px;
+    }
+  }
+}
