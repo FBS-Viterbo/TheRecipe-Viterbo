@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
 .text--dark {
@@ -1464,6 +1465,7 @@ img {
   max-width: 38rem;
 }
 .banner__left h3 {
+  font-family: "Playfair Display", serif;
   margin: 2rem 0;
   inline-size: 35rem;
 }
@@ -1645,6 +1647,7 @@ img {
   align-items: center;
 }
 .aboutRecipe__wrapper h2 {
+  font-family: "Playfair Display", serif;
   margin: 2rem 0;
 }
 .aboutRecipe__wrapper img {
@@ -1658,6 +1661,9 @@ img {
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 2rem;
+}
+.aboutTheRec__wrapper .left h2 {
+  font-family: "Playfair Display", serif;
 }
 .aboutTheRec__wrapper .left {
   display: flex;
@@ -1692,6 +1698,9 @@ img {
   color: #d9964a;
   letter-spacing: 10px;
 }
+.aboutTheRec__wrapper .aboutTheRec__cards .aboutCard .info .title2 {
+  font-family: "Playfair Display", serif;
+}
 .aboutTheRec__wrapper .aboutTheRec__cards .aboutCard .info .stars i {
   color: #d9964a;
 }
@@ -1715,6 +1724,12 @@ img {
 }
 .talk__wrapper .talkInfo {
   margin: 2rem 0;
+}
+.talk__wrapper h2 {
+  font-family: "Playfair Display", serif;
+}
+.talk__wrapper h3 {
+  font-family: "Playfair Display", serif;
 }
 .talk__wrapper form input {
   border: 1px solid #666666;
@@ -1751,6 +1766,9 @@ img {
 }
 .talk__wrapper .contactInfo .infoContent p {
   font-size: 14px;
+}
+.talk__wrapper .contactInfo .infoTitle {
+  margin-top: 1rem;
 }
 
 .readMoreBanner {

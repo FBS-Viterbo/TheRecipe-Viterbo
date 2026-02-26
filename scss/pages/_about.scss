@@ -1,4 +1,5 @@
 @use "../abstract/" as *;
+@use "../base/" as *;
 
 .aboutRecipe {
   position: relative;
@@ -23,6 +24,7 @@
     flex-direction: column;
     align-items: center;
     h2 {
+      font-family: $font-secondary;
       margin: 2rem 0;
     }
 
@@ -41,6 +43,9 @@
     grid-template-columns: 1fr auto;
     gap: 2rem;
     .left {
+      h2 {
+        font-family: $font-secondary;
+      }
       display: flex;
       flex-direction: column;
       gap: 2rem;
@@ -75,6 +80,9 @@
           .title {
             color: $clr--primary;
             letter-spacing: 10px;
+          }
+          .title2 {
+            font-family: $font-secondary;
           }
           .stars i {
             color: $clr--primary;
