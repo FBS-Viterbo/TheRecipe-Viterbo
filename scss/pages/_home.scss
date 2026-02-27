@@ -27,6 +27,20 @@
       margin-top: 2rem;
     }
   }
+  @include mediaQuery(520px) {
+    .banner {
+      &__wrapper {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        h3 {
+          width: fit-content;
+          font-size: 20px;
+          margin: 1rem auto;
+        }
+      }
+    }
+  }
 }
 
 .recipe {
@@ -54,6 +68,7 @@
 
 .collection {
   padding: 4rem 0;
+
   &__title {
     display: flex;
     align-items: center;
@@ -90,6 +105,7 @@
       margin-top: 2rem;
     }
   }
+
   &__items {
     .collection__wrapper:nth-child(even) {
       direction: rtl;
@@ -139,6 +155,10 @@
       font-weight: 600;
       transition: background-color 0.3s ease;
     }
+
+    @include mediaQuery(520px) {
+      width: 400px;
+    }
   }
 }
 
@@ -187,6 +207,35 @@
       .stars i {
         color: $clr--primary;
       }
+    }
+  }
+}
+
+@include mediaQuery(520px) {
+  .collection .collection__items .collection__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .recipe {
+    &__cards {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+    }
+  }
+
+  .classicCollection {
+    &__cardsContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .classicCollectionCard {
+      width: 100%;
     }
   }
 }

@@ -15,13 +15,20 @@
     <header class="header">
       <div class="container">
         <div class="header__wrapper">
-          <h3 class="header__title">TheRecipe</h3>
+          <h3 class="header__title">
+            <a href="./home.html">TheRecipe</a>
+          </h3>
           <nav class="header__nav">
             <ul>
               <li><a href="./about.html">About</a></li>
               <li><a href="./contact.html">Contact</a></li>
             </ul>
           </nav>
+          <div class="header__toggle-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
       </div>
     </header>
@@ -92,11 +99,13 @@
 
               <p class="infoTitle">Address</p>
               <div class="infoContent">
-                <i class="fa-solid fa-phone"></i>
-                <p>The Home of TheRecipe</p>
+                <i class="fa-solid fa-location-dot"></i>
+                <div class="info">
+                  <p>The Home of TheRecipe</p>
+                  <p>75 Ninth Avenue</p>
+                  <p>New York, NY 10011</p>
+                </div>
               </div>
-              <p>75 Ninth Avenue</p>
-              <p>New York, NY 10011</p>
             </div>
           </div>
         </div>
@@ -116,5 +125,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/burger.js"></script>
   </body>
 </html>

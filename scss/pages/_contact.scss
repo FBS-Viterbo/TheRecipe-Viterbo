@@ -58,8 +58,8 @@
       .infoContent {
         display: flex;
         gap: 1rem;
-        align-items: center;
         i {
+          margin-top: 5px;
           font-size: 14px;
         }
         p {
@@ -70,5 +70,25 @@
         margin-top: 1rem;
       }
     }
+
+    @include mediaQuery(520px) {
+      grid-template-columns: unset;
+      h2 {
+        text-align: center;
+      }
+      .talkInfo {
+        text-align: center;
+      }
+      .right .contactInfo {
+        width: fit-content;
+        margin: auto;
+      }
+    }
+  }
+}
+
+@include mediaQuery(520px) {
+  .container {
+    padding: 0 1rem;
   }
 }
