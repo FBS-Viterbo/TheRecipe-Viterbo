@@ -11,6 +11,12 @@
   align-items: center;
 }
 
+@mixin betweenBot {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
 @mixin gridFixed($cols, $gap) {
   display: grid;
   grid-template-columns: repeat($cols, 1fr);
