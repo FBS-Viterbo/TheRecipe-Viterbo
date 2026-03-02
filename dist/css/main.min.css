@@ -1880,6 +1880,7 @@ img {
     width: -moz-fit-content;
     width: fit-content;
     margin: auto;
+    margin-bottom: 3rem;
   }
 }
 
@@ -1920,6 +1921,22 @@ img {
 .readMoreBanner__topTitle {
   margin-bottom: 5rem;
 }
+@media screen and (max-width: 520px) {
+  .readMoreBanner__topTitle {
+    flex-direction: column;
+    margin-bottom: 3rem;
+  }
+}
+@media screen and (max-width: 520px) {
+  .readMoreBanner {
+    flex-direction: column;
+  }
+  .readMoreBanner h3 {
+    width: unset;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}
 .readMoreBanner__botTitle {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -1932,6 +1949,12 @@ img {
 }
 .readMoreBanner__botTitle {
   margin: 2rem 0;
+}
+@media screen and (max-width: 520px) {
+  .readMoreBanner__botTitle {
+    grid-template-columns: unset;
+    gap: 2rem;
+  }
 }
 .readMoreBanner .line {
   width: 100%;
@@ -1946,13 +1969,18 @@ img {
 }
 .readMoreBanner__content .ingredients {
   background-color: #d9964a;
-  padding: 3rem;
+  padding: 1rem;
   color: #ffffff;
   width: -moz-fit-content;
   width: fit-content;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+@media screen and (max-width: 520px) {
+  .readMoreBanner__content {
+    grid-template-columns: unset;
+  }
 }
 
 .directions__wrapper .directionTitle {
@@ -1961,6 +1989,11 @@ img {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+@media screen and (max-width: 520px) {
+  .directions__wrapper .directionTitle {
+    margin-top: 3rem;
+  }
 }
 .directions__wrapper .directionTitle::after {
   content: "";
@@ -1974,6 +2007,11 @@ img {
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 2rem;
+}
+@media screen and (max-width: 520px) {
+  .directions__wrapper .mainContent {
+    grid-template-columns: unset;
+  }
 }
 .directions__wrapper .mainContent .left .boldP {
   font-weight: bold;
@@ -2008,6 +2046,13 @@ img {
 .directions__wrapper .mainContent .left .videoContainer iframe {
   width: 90%;
   height: 20vw;
+}
+@media screen and (max-width: 520px) {
+  .directions__wrapper .mainContent .left .videoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .directions__wrapper .mainContent .right {
   margin-top: 3rem;
@@ -2092,4 +2137,9 @@ img {
 }
 .directions__wrapper .mainContent .right .cards .card .content .stars i {
   color: #d9964a;
+}
+@media screen and (max-width: 520px) {
+  .directions__wrapper .mainContent .right .cards {
+    padding-bottom: 1rem;
+  }
 }/*# sourceMappingURL=main.min.css.map */

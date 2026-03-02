@@ -31,6 +31,18 @@
       display: flex;
     }
     margin-bottom: 5rem;
+    @include mediaQuery(520px) {
+      flex-direction: column;
+      margin-bottom: 3rem;
+    }
+  }
+  @include mediaQuery(520px) {
+    flex-direction: column;
+    h3 {
+      width: unset;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
   }
 
   &__botTitle {
@@ -43,6 +55,11 @@
       }
     }
     margin: 2rem 0;
+
+    @include mediaQuery(520px) {
+      grid-template-columns: unset;
+      gap: 2rem;
+    }
   }
 
   .line {
@@ -59,12 +76,16 @@
 
     .ingredients {
       background-color: $clr--primary;
-      padding: 3rem;
+      padding: 1rem;
       color: $clr--light;
       width: fit-content;
       display: flex;
       flex-direction: column;
       gap: 1rem;
+    }
+
+    @include mediaQuery(520px) {
+      grid-template-columns: unset;
     }
   }
 }
@@ -77,6 +98,10 @@
       display: flex;
       align-items: center;
       gap: 1rem;
+
+      @include mediaQuery(520px) {
+        margin-top: 3rem;
+      }
     }
 
     .directionTitle::after {
@@ -92,6 +117,9 @@
       display: grid;
       grid-template-columns: 1fr auto;
       gap: 2rem;
+      @include mediaQuery(520px) {
+        grid-template-columns: unset;
+      }
       .left {
         .boldP {
           font-weight: bold;
@@ -122,6 +150,11 @@
           iframe {
             width: 90%;
             height: 20vw;
+          }
+          @include mediaQuery(520px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
           }
         }
       }
@@ -210,6 +243,10 @@
                 color: $clr--primary;
               }
             }
+          }
+
+          @include mediaQuery(520px) {
+            padding-bottom: 1rem;
           }
         }
       }
